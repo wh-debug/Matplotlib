@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "C:\\Users\\wh\\Anaconda3\\python.exe",
+    "fileheader.configObj": {
+        // 可以在本文档搜索配置查看相关介绍
+        "designAddHead": false, // 默认关闭, 生成的图案注释是否附带头部注释
+        "headDesignName": "random" // 默认为随机图案 生成哪个注释图案
+    }
+}
