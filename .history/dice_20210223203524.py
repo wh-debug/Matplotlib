@@ -1,12 +1,11 @@
 '''
 Author: your name
 Date: 2021-02-23 20:07:30
-LastEditTime: 2021-02-23 20:46:33
+LastEditTime: 2021-02-23 20:35:24
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \Matplotlib\dice.py
 '''
-'''图上用散点图显示随机掷骰子的次数'''
 from make_plotly import Die
 import matplotlib.pyplot as plt
 
@@ -24,18 +23,9 @@ for roll_num in range(1000):
 
 frequencies = []
 for value in range(1, die.num_sides+1):
-    frequency = results.count(value)    #todo value是数字几，就会统计列表中相应数字个数
+    frequency = results.count(value) #todo value是数字几，就会统计列表中相应数字个数
     frequencies.append(frequency)
 
-plt.style.use('Solarize_Light2')
-fig, ax = plt.subplots()
-y_values = frequencies
-ax.scatter(x_values, y_values, c='green', s = 100)
 
-ax.set_title("骰子朝上统计", fontsize=24)
-ax.set_xlabel("次数", fontsize=14)
-ax.set_ylabel("骰子值", fontsize=14)
 
-ax.tick_params(axis='both', which='major', labelsize=14)
-plt.show()
 print(frequencies)

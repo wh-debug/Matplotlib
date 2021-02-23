@@ -1,12 +1,11 @@
 '''
 Author: your name
 Date: 2021-02-23 20:07:30
-LastEditTime: 2021-02-23 20:46:33
+LastEditTime: 2021-02-23 20:45:42
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \Matplotlib\dice.py
 '''
-'''图上用散点图显示随机掷骰子的次数'''
 from make_plotly import Die
 import matplotlib.pyplot as plt
 
