@@ -17,4 +17,3 @@ class Die:
     def roll(self):
         """返回一个位于1和骰子面数之间的随机值"""
         return randint(1, self.num_sides)
-        
